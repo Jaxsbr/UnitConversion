@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+.Gear-logo {
+  animation: Gear-logo-spin infinite 75s linear;
+  height: 27vmin;
+  pointer-events: none;
+  margin-top: -200px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 27vmin;
+  pointer-events: none;
+  margin-top: -200px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.tile-text {
+  font-size: 3em;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.under {
+  position: absolute;
+  z-index: 2;
+}
+
+.over {
+  position: absolute;  
+  z-index: 3;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes Gear-logo-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
