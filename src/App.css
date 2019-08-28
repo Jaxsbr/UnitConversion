@@ -4,21 +4,22 @@
 
 .Gear-logo {
   animation: Gear-logo-spin infinite 75s linear;
-  height: 27vmin;
+  height: 40vmin;
   pointer-events: none;
-  margin-top: -200px;
+  margin-top: 0;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 27vmin;
+  height: 40vmin;
   pointer-events: none;
-  margin-top: -200px;
+  margin-top: 0;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 30vh;
+  max-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,17 +35,36 @@
 .tile-text {
   font-size: 2.2em;
   font-style: italic;
-  font-weight: 300;
+  font-weight: 700;
+  /* position: absolute;
+  z-index: 4; */
+  margin-top: 1em;
+  text-shadow: 4px 4px #282c34;
 }
+
+.title-unit {
+  position: absolute;
+  z-index: 4;
+  margin-top: 5vh;
+}
+
+.title-conversion {
+  position: absolute;
+  z-index: 4;
+  margin-top: 10vh;
+}
+
 
 .under {
   position: absolute;
   z-index: 2;
+  margin-top: 2vh;
 }
 
 .over {
   position: absolute;  
   z-index: 3;
+  margin-top: 2vh;
 }
 
 @keyframes App-logo-spin {
